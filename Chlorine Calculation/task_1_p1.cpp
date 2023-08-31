@@ -4,12 +4,12 @@ float galConvert(float volInGallon){
 	float poolcubic=volInGallon/7.481;
 	return poolcubic;
 }
-float calCl(int desiredCl , int currentCl, int poolcubic, int clCon){
-	int clp=(desiredCl-currentCl)*poolcubic/clCon;
+float calCl(float desiredCl , float currentCl, float poolcubic, float clCon){
+	float clp=(desiredCl-currentCl)*poolcubic/clCon;
 	return clp;
 }
 int main(){
-	int volInGallon,desiredCl,currentCl,clCon,poolcubic;
+	float volInGallon,desiredCl,currentCl,clCon,poolcubic;
 	cout<<"Enter Size of Pool: ";
 	cin>>volInGallon;
 	cout<<"Enter current level of Chlorine: ";
@@ -27,7 +27,7 @@ int main(){
 	float fun1=galConvert(volInGallon);
 	
 	
-	float fun2=calCl(desiredCl,currentCl,poolcubic,clCon);
+	float fun2=calCl(desiredCl,currentCl,fun1,clCon);
 	cout<<fun2;
 
 	

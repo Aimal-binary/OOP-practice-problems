@@ -18,7 +18,6 @@ int main(){
 	int first,second,third,fourth,result1,result2;
 	cout<<"Enter First elemet of Fraction 1: ";
 	cin>>first;
-//	cout<<"/";
 	cout <<"Enter second Element of fraction 1: ";
 	cin>>third;
 	cout <<"Enter first Element of fraction 2: ";
